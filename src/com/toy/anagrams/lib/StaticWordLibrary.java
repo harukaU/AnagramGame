@@ -36,7 +36,7 @@ package com.toy.anagrams.lib;
  */
 final class StaticWordLibrary extends WordLibrary {
 
-    private static final String[] WORD_LIST = {
+    /*private static final String[] WORD_LIST = {
         "cat",
         "dog",
         "abstraction",
@@ -84,6 +84,7 @@ final class StaticWordLibrary extends WordLibrary {
         "vertex",
         "unsigned",
         "traditional"};
+        * */
 
     private static final String[] SCRAMBLED_WORD_LIST = {
         "atc",
@@ -149,7 +150,7 @@ final class StaticWordLibrary extends WordLibrary {
      * @return word at that index in its natural form
      */
     public String getWord(int idx) {
-        return WORD_LIST[idx];
+        return SCRAMBLED_WORD_LIST[idx];
     }
 
     /**
@@ -166,7 +167,7 @@ final class StaticWordLibrary extends WordLibrary {
      * @return the total number of plain/scrambled word pairs in the library
      */
     public int getSize() {
-        return WORD_LIST.length;
+        return SCRAMBLED_WORD_LIST.length;
     }
 
     /**
